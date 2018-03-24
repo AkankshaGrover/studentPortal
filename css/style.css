@@ -1,0 +1,21 @@
+#main
+{
+    background-color: coral;
+}
+#welcome
+{
+    background-color: powderblue
+}
+#reg
+{
+ display:none;
+}
+#edit
+{
+    display:none;
+}
+#del
+{
+    display:none;
+}
+

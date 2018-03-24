@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Student Portal</title>
+</head>
+<body>
+    <div id="heading">
+        Student Portal
+    </div>
+    <div id="main">
+        <h1 id="welcome">
+            <center>Welcome To Registration Portal</center>
+        </h1>
+        <br>
+        <button class="reg" id="reg1" data-toggle="modal"> Register </button>&nbsp&nbsp&nbsp
+        <button class="edit" id="edit1" data-toggle="modal"> Edit </button>&nbsp&nbsp&nbsp
+        <button class="del" id="del1" data-toggle="modal"> Delete </button>
+        <!--registration form-->
+        <div class="modal-fade" id="reg" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">
+                            <center>Registration form</center>
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form name="form1">
+                            <div class="form-group" id="sname">
+                                <label for="name">Name:</label>
+                                <input type="name" class="form-control" id="name">
+                                <br>
+                                <br>
+                            </div>
+                            <div class="form-group" id="sroll">
+                                <label for="rollno">Roll No:</label>
+                                <input type="text" class="form-control" id="rollno">
+                                <br>
+                                <br>
+                            </div>
+                            <div class="form-group" id="sgradyear">
+                                <label for="gradyear">Graduating Year:</label>
+                                <input type="text" class="form-control" id="gradyear">
+                                <br>
+                                <br>
+                            </div>
+                            <div class="form-group" id="sstream">
+                                <label for="stream">Stream:</label>
+                                <input type="text" class="form-control" id="stream">
+                                <br>
+                                <br>
+                            </div>
+                            <button type="button" class="btn btn-default" id="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--edit form-->
+        <div class="modal-fade" id="edit" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">
+                            <center>Edit Student Details</center>
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <form name="form2">
+                            <div class="form-group" id="sname2">
+                                <label for="name2">Name:</label>
+                                <input type="name" class="form-control" id="name2">
+                            </div>
+                            <div class="form-group" id="srollno2">
+                                <label for="rollno2">ROLL NO:</label>
+                                <input type="text" class="form-control" id="rollno2">
+                            </div>
+                            <div class="form-group" id="sgradyear2">
+                                <label for="gradyear2">GRADUATION YEAR:</label>
+                                <input type="text" class="form-control" id="gradyear2">
+                            </div>
+                            <div class="form-group" id="sstream2">
+                                <label for="stream2">STREAM:</label>
+                                <input type="text" class="form-control" id="stream2">
+                            </div>
+                            <button type="button" class="btn btn-default" id="editb">EDIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--table-->
+        <h4>
+            <center>Student Database</center>
+        </h4>
+        <table class="table" id="table">
+            <thead>
+                <th> </th>
+                <th>NAME</th>
+                <th>ROLL NO.</th>
+                <th>GRADUATION YEAR</th>
+                <th>STREAM</th>
+            </thead>
+            <tbody id="tbody"><tr>
+                    <td>
+                        <input type="checkbox" id="chk">
+                    </td>
+                    <td>AKANKSHA GROVER</td>
+                    <td>1510991038</td>
+                    <td>2019</td>
+                    <td>CSE</td>
+                </tr></tbody>
+        </table>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </div>
+</body>
+</html>
